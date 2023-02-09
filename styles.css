@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    display:flex;
+    flex-direction: column;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+ height: 400px;
+ width: 400px;
+ background-color: grey;
+ display: flex;
+ flex-wrap: wrap;
+ border: 1px solid black;
+}
+
+.grids {
+    width: calc(400px / 16 - 2 * 1px);
+    height: calc(400px / 16 - 2 * 1px);
+    border: 1px solid black;
+  }
+
+
+
+
+
