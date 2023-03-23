@@ -3,21 +3,49 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(231, 230, 230);
 }
+
+button{
+    border-radius: 2px;
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 .heading{
     display:flex;
     flex-direction: column;
 }
 
+.colorSelector{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.colorButton{
+    width: 80px;
+    margin: 5px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
 #title{
     display: flex;
     justify-content: center;
+    font-family: 'Climate Crisis', cursive;   
+    /*gradient for text*/
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #container{
  height: 400px;
  width: 400px;
- background-color: grey;
  display: flex;
  flex-wrap: wrap;
  border: 1px solid black;
@@ -27,6 +55,31 @@ html, body {
     width: calc(400px / 16 - 2 * 1px);
     height: calc(400px / 16 - 2 * 1px);
     border: 1px solid black;
+  }
+
+  .selected-button{
+    background-color: rgba(157, 159, 159, 0.877);
+  }
+
+  #clear-button{
+    background-color: rgb(73, 181, 220);
+    color: white;
+  }
+
+  .sp-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #prompt{
+    padding-right: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  input{
+    height: 1.4em;
+    width: 3em
   }
 
 

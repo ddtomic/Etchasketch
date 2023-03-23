@@ -10,23 +10,46 @@
     <link rel = "reset" href = "reset.css">
     <link rel = "stylesheet" href = "styles.css">
     <script src = "main.js" defer></script>
+
+    <!--Linking Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:wght@100;300;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div>
+        <!--EtchaSketch title-->
         <div class = "heading">
-
             <h1 id = "title">
                 Etch-A-Sketch
             </h1>
-
         </div>
 
-    <div id = "container">
-        <!-- This is where each individual grid box goes -->
-    </div>
+        <!--buttons for clear, eraser, and colors.-->
+        
+        <div class = sp-container>
+            <p id = "prompt" > Enter a grid width (1-100): </p>
+            <input id = "sizeInput" type = "number" >
+        </div>
+
+        <div class = colorSelector>
+            <button id = "black-button" class = "colorButton" onclick = blackButton()>BLACK</button>
+            <button id = "blue-button" class = "colorButton" onclick = blueButton()>BLUE</button>
+            <button id = "red-button" class = "colorButton" onclick = redButton()>RED</button>
+
+            <button id = "clear-button" class = "colorButton" onclick = clearGrid()> CLEAR </button>
+        </div>
+
+
+        <div id = "container">
+        <!-- This is where each individual grid box goes, added in javascript -->
+        </div>
 
     
-</div>
+    </div>
     
 </body>
 </html>
